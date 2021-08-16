@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
 	port: 3306,
   host: "localhost",
   user: "root",
-  password: "iwantmysql81",
+  password: "...",
   database: "pizzas_db"
 });
 
