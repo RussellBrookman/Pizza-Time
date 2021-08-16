@@ -1,6 +1,5 @@
-# Pizza Time (don't forget to hide mySQL password, decide if you want to add a little math SQL functionality. Look at what you did on Amazonished and mod that a little so your using express routers with handlebars. Reset the SQL schema and then the seeds.)
+# Pizza Time
 
-(Rewrite this after I change the code.)
 This application has all the basic functions of a cash regester. 
 Add here >> submit, add something to the menu
 Clicking on the menu removes it from the menu and adds it to What you ate
