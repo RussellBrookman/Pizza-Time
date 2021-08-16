@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12 text-center" id="top-bar">
+			<img src="/assets/img/cartoonPizza.png" alt="pizza" id="pizzaPic">
+			<h1> Pizza Time! </h1>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-6" class="task" id="floatL">
+			<h3> On the menu </h3>
+			{{#each pizzas}}
+				{{#unless this.devoured}}
+					<form action="/pizzas/{{this.id}}?_method=PUT" method="POST">
+						<button type="submit" class="btn btn-default">
+							{{this.pizza_name}}
+						</button>
+					</form>
+				{{/unless}}
+			{{/each}}
+		</div>
+		<div class="col-6" id="floatR">
+			<h3> What you ate </h3>
+			{{#each pizzas}}
+				{{#if this.devoured}}
+					<div class="eaten text-center" placeholder="{{this.id}}">
+						<div>
+							{{this.pizza_name}}
+						</div>
+					</div>
+				{{/if}}
+			{{/each}}
+		</div>
+	</div>
+</div>
+
+{{!-- To add a pizza --}} 
+<div class="container">
+	<div class="row">
+		<div class="col-12 text-center enter_section">
+			<form action="/pizzas" method="POST">
+				<p>Add a pizza type to the menu</p>
+				<input type="text" class="form-control" name="pizza_name" placeholder="Add here" value="" id="enter_text"></input>
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
