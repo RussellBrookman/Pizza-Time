@@ -7,6 +7,7 @@ Set up for Heroku.
 
 This simple application has the basic functions of an on screen order menu. On the back end it will save your order and modify the menu to allow a customer to keep ordering. The back end has intentionally been set up so it can be easily modified to save all kinds of things including, but not limited to, price, tax, and order completion. 
 
+DONT FORGET TO ADD YOUR OWN PASSWORD TO MYSQL IN CONNECTION.JS, FOUND IN THE CONFIG FILE.
 
 # Prerequisites
 
